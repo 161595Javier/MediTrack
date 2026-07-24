@@ -1,0 +1,26 @@
+VER RAMAS E HISTORIAL
+---------------------
+git branch --all
+git log --oneline --graph --decorate --all
+
+CONFIGURAR REPOSITORIO REMOTO
+-----------------------------
+git remote add origin https://github.com/TU_USUARIO/meditrack.git
+
+SUBIR MAIN Y TODAS LAS RAMAS
+----------------------------
+git push -u origin main
+git push origin feature/modelo
+git push origin feature/servicio-reactivo
+git push origin feature/api-rest
+git push origin feature/pruebas
+
+PRUEBAS Y EJECUCIÓN
+-------------------
+mvn clean test
+mvn spring-boot:run
+
+CURL EN POWERSHELL
+------------------
+curl.exe http://localhost:8080/api/appointments
+curl.exe http://localhost:8080/api/appointments/A1
